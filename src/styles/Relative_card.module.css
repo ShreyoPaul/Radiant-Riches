@@ -1,0 +1,125 @@
+.related_card {
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 333px;
+    background-color: #FFF;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.related_card_img_wrp {
+    min-height: 225px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.related_card_img {
+    object-fit: cover;
+
+}
+
+.card_content {
+    width: 100%;
+}
+
+.card_tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.card_tag {
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #074786;
+    background-color: #F2F4F7;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    color: #626E79;
+}
+
+.txt {
+    font-size: 16px;
+    line-height: 24px;
+    width: 284px;
+    padding-bottom: 6px;
+    color: #626E79;
+}
+
+.price_wrp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 12px;
+}
+
+.cuur_price {
+    color: #5C6874;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.prev_price {
+    color: #9FA9B3;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+
+.price_off {
+    color: #EF4C5D;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.view_deal {
+    width: 100%;
+    background-color: #1B88F4;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .related_card {
+        width: 280px;
+    }
+    .txt {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .related_card {
+        width: 80vw;
+    }
+
+    .txt {
+        width: 75vw;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}

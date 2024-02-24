@@ -1,0 +1,132 @@
+.navbar_wrp {
+    width: 100%;
+    background-color: #212731;
+}
+
+.navbar {
+    width: 800px;
+    /* padding-left: 176px; */
+    margin: auto;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    align-items: center;
+}
+
+.search_bar input {
+    min-width: 258px;
+    height: 37px;
+    border-radius: 8px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+.search_logo {
+    position: relative;
+    left: 35px;
+}
+
+.option_wrp {
+    font-size: 14px;
+    line-height: 20px;
+    color: #D1D6DA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 53px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu div {
+    width: 35px;
+    height: 3px;
+    background-color: #FFF;
+    transition: ease-in-out 200ms;
+}
+
+.bar1 {
+    transform: rotate(45deg) translate(8px, 1px);
+}
+
+.bar2 {
+    display: none;
+}
+
+.bar3 {
+    transform: rotate(-45deg) translate(8px, 1px);
+}
+
+.option2_wrp {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    padding: 40px;
+    background-color: #212731;
+    font-size: 16px;
+    line-height: 20px;
+    color: #D1D6DA;
+    border-radius: 12px;
+    top: 65px;
+    right: 0;
+    transition: ease-in-out 200ms;
+    transform: translateY(0);
+}
+
+.display_none {
+    transform: translateY(-800px);
+    display: none;
+    flex-direction: column;
+    transition: ease-in-out 100ms;
+    position: absolute;
+    top: 65px;
+    right: 0;
+
+}
+
+.option {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .option_wrp {
+        display: none;
+    }
+
+    .option2_wrp, .display_none {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .search_bar input {
+        min-width: 50vw;
+        width: 50vw;
+    }
+}
