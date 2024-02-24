@@ -13,7 +13,7 @@ const Relative_card = ({ data }) => {
                     {
                         data.tags?.map((tag, id) => {
                             return (
-                                <div className={styles.card_tag}>
+                                <div className={styles.card_tag} key={id}>
                                     {tag}
                                 </div>
                             )
